@@ -3,6 +3,20 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/india',
+        destination: 'https://www.linkedin.com/in/indiapiercy/',
+        permanent: true,
+      },
+      {
+        source: '/toni',
+        destination: 'https://www.linkedin.com/in/antonioni/',
+        permanent: true,
+      },
+    ]
+  },
   async rewrites() {
     return [
       {
