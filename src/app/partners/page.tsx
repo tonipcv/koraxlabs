@@ -128,16 +128,16 @@ export default function PartnersPage() {
             <div className="absolute inset-0 bg-white/[0.02] blur-3xl -z-10" />
             <h1 className="text-5xl sm:text-6xl font-satoshi tracking-[-0.03em] leading-tight mb-6">
               <span className="bg-gradient-to-r from-white/95 to-white/60 text-transparent bg-clip-text">
-                GANHE DE 10 MIL A 100 MIL REAIS POR MÊS
+                EARN BETWEEN $2,000 AND $20,000+ PER MONTH
               </span>
             </h1>
             <h2 className="text-3xl sm:text-4xl font-satoshi tracking-[-0.03em] leading-tight mb-6">
               <span className="bg-gradient-to-r from-white/95 to-white/60 text-transparent bg-clip-text">
-                TRABALHANDO SENDO UM CLOSER
+                WORKING AS A CLOSER
               </span>
             </h2>
             <p className="text-lg text-zinc-400 font-euclidCircularB tracking-[-0.04em] max-w-2xl mx-auto">
-              Junte-se ao nosso time de closers e desbloqueie seu potencial de ganhos. Preencha o formulário abaixo para começar.
+              Join our team of closers and unlock your earning potential. Fill out the form below to get started.
             </p>
           </div>
 
@@ -152,17 +152,17 @@ export default function PartnersPage() {
                 </div>
                 <h3 className="text-2xl font-satoshi tracking-[-0.03em] mb-4">
                   <span className="bg-gradient-to-r from-white/95 to-white/60 text-transparent bg-clip-text">
-                    Cadastro Realizado com Sucesso!
+                    Registration Successful!
                   </span>
                 </h3>
                 <p className="text-zinc-400 mb-8">
-                  Obrigado pelo seu interesse! Nossa equipe entrará em contato com você em breve para os próximos passos.
+                  Thank you for your interest! Our team will contact you soon with the next steps.
                 </p>
                 <button
                   onClick={() => setSuccess(false)}
                   className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/10 text-white font-euclidCircularB transition-all duration-300"
                 >
-                  <span>Cadastrar Novamente</span>
+                  <span>Register Again</span>
                   <ArrowRight size={16} strokeWidth={1.5} />
                 </button>
               </div>
@@ -170,14 +170,14 @@ export default function PartnersPage() {
               <div className="bg-white/5 border border-white/10 p-8 rounded-sm">
                 <h3 className="text-2xl font-satoshi tracking-[-0.03em] mb-6 text-center">
                   <span className="bg-gradient-to-r from-white/95 to-white/60 text-transparent bg-clip-text">
-                    Cadastre-se como Closer
+                    Apply as a Closer
                   </span>
                 </h3>
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-euclidCircularB tracking-[-0.04em] text-zinc-400 mb-2">
-                      Nome Completo*
+                      Full Name*
                     </label>
                     <input
                       type="text"
@@ -193,7 +193,7 @@ export default function PartnersPage() {
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-euclidCircularB tracking-[-0.04em] text-zinc-400 mb-2">
-                      E-mail*
+                      Email*
                     </label>
                     <input
                       type="email"
@@ -209,7 +209,7 @@ export default function PartnersPage() {
                   
                   <div>
                     <label htmlFor="whatsapp" className="block text-sm font-euclidCircularB tracking-[-0.04em] text-zinc-400 mb-2">
-                      WhatsApp* (com DDD)
+                      WhatsApp* (with country/area code)
                     </label>
                     <input
                       type="tel"
@@ -218,7 +218,7 @@ export default function PartnersPage() {
                       value={formData.whatsapp}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all"
-                      placeholder="(99) 99999-9999"
+                      placeholder="+1 555 555 5555"
                       required
                       disabled={loading}
                     />
@@ -226,7 +226,7 @@ export default function PartnersPage() {
                   
                   <div>
                     <label htmlFor="instagram" className="block text-sm font-euclidCircularB tracking-[-0.04em] text-zinc-400 mb-2">
-                      Instagram (sem @)
+                      Instagram (without @)
                     </label>
                     <input
                       type="text"
@@ -235,7 +235,7 @@ export default function PartnersPage() {
                       value={formData.instagram}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all"
-                      placeholder="seu.perfil"
+                      placeholder="your.profile"
                       disabled={loading}
                     />
                   </div>
@@ -256,11 +256,11 @@ export default function PartnersPage() {
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                           </svg>
-                          Enviando...
+                          Sending...
                         </span>
                       ) : (
                         <>
-                          <span>CADASTRAR COMO CLOSER</span>
+                          <span>APPLY AS CLOSER</span>
                           <ArrowRight size={16} strokeWidth={1.5} className="ml-2" />
                         </>
                       )}
@@ -268,7 +268,7 @@ export default function PartnersPage() {
                   </div>
                   
                   <p className="text-xs text-zinc-500 font-euclidCircularB tracking-[-0.04em] text-center pt-4">
-                    Seus dados estão seguros e não serão compartilhados com terceiros.
+                    Your data is secure and will not be shared with third parties.
                   </p>
                 </form>
               </div>
@@ -279,35 +279,35 @@ export default function PartnersPage() {
           <div className="mt-20">
             <h3 className="text-3xl font-satoshi tracking-[-0.03em] mb-10 text-center">
               <span className="bg-gradient-to-r from-white/95 to-white/60 text-transparent bg-clip-text">
-                Por que se tornar um Closer?
+                Why become a Closer?
               </span>
             </h3>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white/5 border border-white/10 p-6 rounded-sm">
                 <h4 className="text-xl font-satoshi tracking-[-0.03em] mb-4 text-white/90">
-                  Altos Ganhos
+                  High Earnings
                 </h4>
                 <p className="text-zinc-400 font-euclidCircularB tracking-[-0.04em]">
-                  Potencial de ganhos entre R$ 10.000 e R$ 100.000 por mês com comissões atrativas.
+                  Earning potential between $2,000 and $20,000+ per month with attractive commissions.
                 </p>
               </div>
               
               <div className="bg-white/5 border border-white/10 p-6 rounded-sm">
                 <h4 className="text-xl font-satoshi tracking-[-0.03em] mb-4 text-white/90">
-                  Flexibilidade
+                  Flexibility
                 </h4>
                 <p className="text-zinc-400 font-euclidCircularB tracking-[-0.04em]">
-                  Trabalhe de onde quiser, com horários flexíveis e liberdade para gerenciar seu tempo.
+                  Work from anywhere, with flexible hours and autonomy to manage your schedule.
                 </p>
               </div>
               
               <div className="bg-white/5 border border-white/10 p-6 rounded-sm">
                 <h4 className="text-xl font-satoshi tracking-[-0.03em] mb-4 text-white/90">
-                  Treinamento Completo
+                  Complete Training
                 </h4>
                 <p className="text-zinc-400 font-euclidCircularB tracking-[-0.04em]">
-                  Receba treinamento especializado e suporte contínuo para maximizar seus resultados.
+                  Receive specialized training and ongoing support to maximize your results.
                 </p>
               </div>
             </div>

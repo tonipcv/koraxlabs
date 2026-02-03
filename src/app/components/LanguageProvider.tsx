@@ -99,13 +99,12 @@ const translations = {
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('pt');
+  const [language, setLanguage] = useState<Language>('en');
 
   useEffect(() => {
     // Detectar idioma do navegador
-    const detectBrowserLanguage = () => {
-      const browserLang = navigator.language.substring(0, 2).toLowerCase();
-      return browserLang === 'pt' ? 'pt' : 'en';
+    const detectBrowserLanguage = (): Language => {
+      return 'en';
     };
 
     setLanguage(detectBrowserLanguage());

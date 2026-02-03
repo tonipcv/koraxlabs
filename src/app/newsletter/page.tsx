@@ -70,11 +70,11 @@ export default function NewsletterPage() {
             </h1>
             
             <p className="text-white/80 text-lg mb-2">
-              Fique atualizado com as últimas novidades sobre IA.
+              Stay updated with the latest news on AI.
             </p>
             
             <p className="text-zinc-400">
-              Assine nossa newsletter para receber dicas, ferramentas e insights sobre o mundo da Inteligência Artificial.
+              Subscribe to receive tips, tools, and insights about the world of Artificial Intelligence.
             </p>
           </div>
           
